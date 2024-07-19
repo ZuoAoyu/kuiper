@@ -4,6 +4,8 @@ project(kuiper)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 find_package(GTest CONFIG REQUIRED)
 
 # aux 是 auxiliary（辅助）的缩写。此命令用于将指定目录中的所有源文件添加到变量中。
