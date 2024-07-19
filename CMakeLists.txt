@@ -8,6 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(GTest CONFIG REQUIRED)
 find_package(glog CONFIG REQUIRED)
+find_package(Armadillo CONFIG REQUIRED)
 
 # aux 是 auxiliary（辅助）的缩写。此命令用于将指定目录中的所有源文件添加到变量中。
 #aux_source_directory(./test DIR_TEST_ARMA)
@@ -20,6 +21,7 @@ target_link_libraries(
         PRIVATE
         GTest::gtest
         glog::glog
+        ${ARMADILLO_LIBRARIES}
 )
 
 enable_testing()
